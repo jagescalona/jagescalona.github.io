@@ -1,0 +1,260 @@
+/* Archivador · tokens para la web. Generado de project/tokens.json por lienzo-fuente/sistema.py (20/11/2026): no se edita a mano.
+   El tema es el del aparato. Las letras van dentro de la web: las rutas de @font-face son relativas a este archivo. */
+@font-face { font-family: 'Gabarito'; src: url('letras/Gabarito-700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gabarito'; src: url('letras/Gabarito-800.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Atkinson Hyperlegible Next'; src: url('letras/AtkinsonHyperlegibleNext-400.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Atkinson Hyperlegible Next'; src: url('letras/AtkinsonHyperlegibleNext-600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Atkinson Hyperlegible Next'; src: url('letras/AtkinsonHyperlegibleNext-800.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: swap; }
+:root {
+  color-scheme: light dark;
+  --papel: #F6F7F9;
+  --papel-punto: #CDD3DC;
+  --tarjeta: #FFFFFF;
+  --tinta: #1B2233;
+  --tenue: #515B6E;
+  --linea: #1B2233;
+  --raya: #D9DEE6;
+  --accion: #1B2233;
+  --sobre-accion: #FFFFFF;
+  --oace: #FFC27A;
+  --som: #A9CCFF;
+  --aplof: #A6E3BC;
+  --utilidades: #E9D7AE;
+  --reserva-lila: #D3C5F6;
+  --reserva-rosa: #F6C0CD;
+  --sobre-asignatura: #1B2233;
+  --nds-fondo: #F5F1E8;
+  --nds-tinta: #0A1854;
+  --nds-tenue: #505980;
+  --taco-1: 5px 5px 0 -1.5px #FFFFFF, 5px 5px 0 0 #1B2233;
+  --taco-2: 5px 5px 0 -1.5px #FFFFFF, 5px 5px 0 0 #1B2233, 10px 10px 0 -1.5px #FFFFFF, 10px 10px 0 0 #1B2233;
+  --taco-3: 5px 5px 0 -1.5px #FFFFFF, 5px 5px 0 0 #1B2233, 10px 10px 0 -1.5px #FFFFFF, 10px 10px 0 0 #1B2233, 15px 15px 0 -1.5px #FFFFFF, 15px 15px 0 0 #1B2233;
+  --espacio-1: 4px;
+  --espacio-2: 8px;
+  --espacio-3: 12px;
+  --espacio-4: 16px;
+  --espacio-5: 20px;
+  --espacio-6: 24px;
+  --espacio-7: 32px;
+  --espacio-8: 40px;
+  --espacio-9: 56px;
+  --espacio-10: 72px;
+  --radio-ficha: 4px;
+  --radio-hoja: 6px;
+  --radio-pestana: 10px;
+  --radio-boton: 22px;
+  --borde-linea: 1.5px;
+  --borde-raya: 1px;
+  --toque-minimo: 44px;
+  --foco: 3px;
+  --font-titulos: Gabarito, "Trebuchet MS", sans-serif;
+  --font-texto: "Atkinson Hyperlegible Next", Verdana, sans-serif;
+  --font-neudosofia: "Shippori Mincho", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papel: #141924;
+    --papel-punto: #2A3242;
+    --tarjeta: #1D2431;
+    --tinta: #EEF1F5;
+    --tenue: #A8B3C4;
+    --linea: #9AA5B8;
+    --raya: #323B4C;
+    --accion: #EEF1F5;
+    --sobre-accion: #141924;
+    --oace: #FFC27A;
+    --som: #A9CCFF;
+    --aplof: #A6E3BC;
+    --utilidades: #E9D7AE;
+    --reserva-lila: #D3C5F6;
+    --reserva-rosa: #F6C0CD;
+    --sobre-asignatura: #1B2233;
+    --nds-fondo: #0A1854;
+    --nds-tinta: #F5F1E8;
+    --nds-tenue: #AEB0BC;
+    --taco-1: 5px 5px 0 -1.5px #1D2431, 5px 5px 0 0 #9AA5B8;
+    --taco-2: 5px 5px 0 -1.5px #1D2431, 5px 5px 0 0 #9AA5B8, 10px 10px 0 -1.5px #1D2431, 10px 10px 0 0 #9AA5B8;
+    --taco-3: 5px 5px 0 -1.5px #1D2431, 5px 5px 0 0 #9AA5B8, 10px 10px 0 -1.5px #1D2431, 10px 10px 0 0 #9AA5B8, 15px 15px 0 -1.5px #1D2431, 15px 15px 0 0 #9AA5B8;
+  }
+}
+
+/* Archivador · las piezas de la casa de JAG.Escalona (web-construir, Hilos 332, 20/11/2026). Los valores son los tokens de
+   arriba (tokens-web.css del sistema de diseño, sin tocar); cómo se combinan, de las muestras de paginas\ y de la guía de
+   cada pieza. casa.py pega los tokens y esto en comun/casa.css: aquí no va ningún color ni ninguna medida suelta que el
+   sistema tenga como token. Primero el ordenador; el móvil, al final (hasta 700 px). */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--papel);
+  background-image: radial-gradient(var(--papel-punto) 1.2px, transparent 1.3px);
+  background-size: 22px 22px;
+  color: var(--tinta);
+  font-family: var(--font-texto);
+  font-size: 17px;
+  line-height: 1.5;
+}
+main { flex: 1 0 auto; }
+a { color: var(--tinta); }
+a:hover { color: var(--tenue); }
+a:focus-visible, button:focus-visible { outline: var(--foco) solid var(--tinta); outline-offset: 3px; }
+h1, h2, p, ul, ol { margin: 0; }
+
+/* saltar al contenido: solo se ve con el teclado */
+.saltar { position: absolute; left: var(--espacio-4); top: -100px; z-index: 10; display: inline-flex; align-items: center;
+  min-height: var(--toque-minimo); padding: 0 var(--espacio-4); background: var(--accion); color: var(--sobre-accion);
+  border-radius: var(--radio-boton); font-weight: 800; text-decoration: none; }
+.saltar:focus { top: var(--espacio-2); color: var(--sobre-accion); }
+
+/* ---------- Cabecera ---------- */
+.cab { display: flex; align-items: center; gap: 4px 20px; flex-wrap: wrap; padding: var(--espacio-4) var(--espacio-8); }
+.cab-marca { display: flex; align-items: center; gap: var(--espacio-3); min-height: 48px; color: var(--tinta); text-decoration: none; }
+.cab-marca:hover { color: var(--tinta); }
+.cab-marca picture, .cab-avatar { display: block; width: 52px; height: 52px; flex: none; }
+.cab-nombre { display: block; flex: none; height: 26px; width: calc(26px * 684.6 / 102.8); background-color: currentColor;
+  -webkit-mask: url("jag-nombre.svg") no-repeat center / contain; mask: url("jag-nombre.svg") no-repeat center / contain; }
+@media (forced-colors: active) { .cab-nombre { forced-color-adjust: none; background-color: CanvasText; } }
+.cab-nav { margin-left: auto; display: flex; gap: 28px; }
+.cab-nav a { display: flex; align-items: center; min-height: var(--toque-minimo); font-size: 17px; text-decoration: none; }
+.cab-nav a[aria-current] { font-weight: 800; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 6px; }
+
+/* ---------- Migas ---------- */
+.migas { display: flex; align-items: center; gap: 0 10px; flex-wrap: wrap; font-size: 15px; }
+.migas a { display: flex; align-items: center; min-height: var(--toque-minimo); }
+.migas [aria-current] { font-weight: 800; }
+
+/* ---------- Portada ---------- */
+.hero { display: flex; align-items: flex-end; gap: var(--espacio-8) var(--espacio-9); flex-wrap: wrap;
+  padding: var(--espacio-8) var(--espacio-8) 64px; }
+.hero-texto { flex: 999 1 480px; display: flex; flex-direction: column; gap: var(--espacio-5); }
+.hero h1 { max-width: 13ch; font-family: var(--font-titulos); font-size: 72px; line-height: 1; font-weight: 800;
+  letter-spacing: -0.01em; text-wrap: balance; }
+.hero p { max-width: 46ch; font-size: 20px; line-height: 1.5; }
+.indice { flex: 1 1 330px; max-width: 420px; display: flex; flex-direction: column;
+  border-bottom: var(--borde-linea) solid var(--linea); }
+.indice a { display: flex; align-items: center; justify-content: space-between; gap: 4px var(--espacio-3); flex-wrap: wrap;
+  min-height: 52px; padding: 6px 18px; margin-left: calc(var(--i, 0) * 22px); background: var(--c); color: var(--sobre-asignatura);
+  border: var(--borde-linea) solid var(--linea); border-radius: var(--radio-pestana) var(--radio-pestana) 0 0;
+  font-family: var(--font-titulos); font-size: 20px; font-weight: 800; text-decoration: none; }
+.indice a:hover { color: var(--sobre-asignatura); text-decoration: underline; }
+.indice-n { font-family: var(--font-texto); font-size: 15px; font-weight: 600; }
+
+.catalogo { display: flex; flex-direction: column; gap: var(--espacio-9); padding: 0 var(--espacio-8) var(--espacio-10); }
+.asig { display: flex; flex-direction: column; gap: 28px; scroll-margin-top: var(--espacio-4); }
+
+/* ---------- Pestana ---------- */
+.pestana-fila { display: flex; align-items: flex-end; gap: 4px var(--espacio-4); flex-wrap: wrap;
+  border-bottom: var(--borde-linea) solid var(--linea); }
+.pestana { padding: var(--espacio-2) var(--espacio-5) 7px; background: var(--c); color: var(--sobre-asignatura);
+  border: var(--borde-linea) solid var(--linea); border-bottom: none; border-radius: var(--radio-pestana) var(--radio-pestana) 0 0;
+  font-family: var(--font-titulos); font-size: 24px; line-height: 1.15; font-weight: 800; }
+.pestana.accion { background: var(--accion); color: var(--sobre-accion); border-color: var(--accion); }
+.pestana-nombre { padding-bottom: var(--espacio-2); font-size: 16px; color: var(--tenue); }
+
+/* ---------- FichaSerie ---------- */
+.fichas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: var(--espacio-7) 34px;
+  padding-right: 15px; }
+.ficha { display: flex; flex-direction: column; gap: 10px; min-height: 172px; padding: var(--espacio-5) var(--espacio-5) 14px;
+  background: var(--tarjeta); color: var(--tinta); border: var(--borde-linea) solid var(--linea); border-radius: var(--radio-ficha);
+  text-decoration: none; }
+.ficha.t1 { box-shadow: var(--taco-1); }
+.ficha.t2 { box-shadow: var(--taco-2); }
+.ficha.t3 { box-shadow: var(--taco-3); }
+.ficha-titulo { font-family: var(--font-titulos); font-size: 25px; line-height: 1.1; font-weight: 700; }
+.ficha-desc { font-size: 16px; line-height: 1.45; color: var(--tenue); }
+.ficha-pie { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: var(--espacio-3); padding-top: 6px; }
+.ficha-n { display: flex; align-items: center; gap: var(--espacio-2); font-size: 15px; font-weight: 800; }
+.cuadro { width: 13px; height: 13px; flex: none; background: var(--c); border: var(--borde-linea) solid var(--linea); }
+.ficha-abrir { display: flex; align-items: center; min-height: 36px; font-size: 16px; font-weight: 800; text-decoration: underline;
+  text-underline-offset: 4px; }
+
+/* ---------- Página (serie, docentes) ---------- */
+main.pagina { display: flex; flex-direction: column; gap: var(--espacio-5); padding: var(--espacio-3) var(--espacio-8) 64px; }
+.archivador { display: flex; flex-direction: column; }
+.hoja { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: var(--espacio-7); padding: var(--espacio-8) 48px 44px 28px;
+  background: var(--tarjeta); border: var(--borde-linea) solid var(--linea); border-top: none;
+  border-radius: 0 0 var(--radio-hoja) var(--radio-hoja); }
+.anillas { display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
+.anillas span { width: 20px; height: 20px; border-radius: 50%; background: var(--papel); border: var(--borde-linea) solid var(--linea); }
+.hoja-cuerpo { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.titulo-fila { display: flex; align-items: baseline; gap: var(--espacio-2) var(--espacio-5); flex-wrap: wrap; }
+.hoja h1 { font-family: var(--font-titulos); font-size: 60px; line-height: 1; font-weight: 800; letter-spacing: -0.01em; }
+.cuenta { font-size: 17px; font-weight: 800; }
+.entradilla { max-width: 60ch; font-size: 19px; line-height: 1.5; }
+
+/* ---------- FilaFicha ---------- */
+.filas { list-style: none; padding: 0; display: flex; flex-direction: column; border-top: var(--borde-linea) solid var(--linea); }
+.fila { display: flex; align-items: center; gap: 10px var(--espacio-4); flex-wrap: wrap; padding: 10px 0;
+  border-bottom: var(--borde-raya) solid var(--raya); }
+.codigo { flex: 0 0 64px; padding: 4px 0; text-align: center; background: var(--c); color: var(--sobre-asignatura);
+  border: var(--borde-linea) solid var(--linea); border-radius: var(--radio-ficha); font-family: var(--font-titulos);
+  font-size: 15px; font-weight: 700; }
+.fila-titulo { flex: 1 1 260px; min-width: 0; font-size: 18px; font-weight: 600; }
+.botones { display: flex; gap: var(--espacio-2); flex-wrap: wrap; }
+
+/* ---------- Boton ---------- */
+.boton { display: inline-flex; align-items: center; min-height: var(--toque-minimo); padding: 0 18px; background: var(--tarjeta);
+  color: var(--tinta); border: var(--borde-linea) solid var(--linea); border-radius: var(--radio-boton); font-size: 15px;
+  font-weight: 800; text-decoration: none; }
+.boton:hover { color: var(--tinta); text-decoration: underline; }
+.boton.principal { background: var(--accion); color: var(--sobre-accion); border-color: var(--accion); }
+.boton.principal:hover { color: var(--sobre-accion); }
+
+.aviso-docentes { display: flex; align-items: center; gap: var(--espacio-2) 18px; flex-wrap: wrap; padding: 14px 18px;
+  border: var(--borde-linea) dashed var(--linea); border-radius: var(--radio-hoja); }
+.aviso-docentes span { flex: 1 1 280px; font-size: 16px; line-height: 1.45; overflow-wrap: anywhere; }
+.aviso-docentes a { display: inline-flex; align-items: center; min-height: var(--toque-minimo); font-size: 16px; font-weight: 800; }
+
+/* ---------- Para docentes ---------- */
+.hoja h2 { font-family: var(--font-titulos); font-size: 28px; line-height: 1.15; font-weight: 800; margin-top: var(--espacio-2); }
+.pasos { list-style: none; padding: 0; display: flex; flex-direction: column; border-top: var(--borde-linea) solid var(--linea); }
+.pasos li { display: flex; gap: var(--espacio-4); align-items: flex-start; padding: 14px 0; border-bottom: var(--borde-raya) solid var(--raya); }
+.paso-n { flex: 0 0 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+  border: var(--borde-linea) solid var(--linea); border-radius: 50%; font-family: var(--font-titulos); font-size: 20px; font-weight: 800; }
+.paso-t { display: flex; flex-direction: column; gap: 4px; }
+.paso-t strong { font-size: 19px; font-weight: 800; }
+.paso-t span { font-size: 17px; line-height: 1.5; color: var(--tenue); }
+.cajas { display: flex; gap: var(--espacio-5); flex-wrap: wrap; padding-top: var(--espacio-2); }
+.caja { flex: 1 1 300px; display: flex; flex-direction: column; gap: 10px; padding: var(--espacio-5);
+  border: var(--borde-linea) solid var(--linea); border-radius: var(--radio-ficha); }
+.hoja .caja h2 { font-size: 24px; margin-top: 0; }
+.caja p { font-size: 17px; line-height: 1.5; }
+.caja .nota { font-size: 15px; line-height: 1.45; color: var(--tenue); }
+.pedir { display: flex; align-items: center; gap: var(--espacio-2) 14px; flex-wrap: wrap; padding-top: 4px; }
+.pedir strong { font-size: 16px; font-weight: 800; overflow-wrap: anywhere; }
+
+/* ---------- Pie ---------- */
+.pie { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 0 var(--espacio-8); padding: 18px 0 22px;
+  border-top: var(--borde-linea) solid var(--linea); font-size: 15px; color: var(--tenue); }
+.pie a { margin-left: auto; color: var(--tenue); }
+.pie a:hover { color: var(--tinta); }
+
+/* ---------- el móvil ---------- */
+@media (max-width: 700px) {
+  .cab { padding: 10px var(--espacio-4); }
+  .cab-nav { gap: 18px; }
+  .hero { gap: var(--espacio-6); padding: 18px var(--espacio-4) 36px; }
+  .hero-texto { flex-basis: 100%; gap: 14px; }
+  .hero h1 { font-size: 42px; }
+  .hero p { font-size: 17px; }
+  .indice { flex: 1 1 100%; max-width: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;
+    border-bottom: none; }
+  .indice a { min-height: 48px; margin-left: 0; border-radius: var(--radio-pestana); }
+  .catalogo { gap: 44px; padding: 0 var(--espacio-4) 48px; }
+  .asig { gap: 22px; }
+  .fichas { gap: 26px; }
+  .pestana { font-size: 22px; }
+  main.pagina { gap: 14px; padding: 4px var(--espacio-4) 44px; }
+  .hoja { grid-template-columns: minmax(0, 1fr); gap: 0; padding: var(--espacio-6) var(--espacio-4) 28px; }
+  .anillas { display: none; }
+  .hoja-cuerpo { gap: 18px; }
+  .hoja h1 { font-size: 40px; }
+  .entradilla { font-size: 17px; }
+  .hoja h2 { font-size: 25px; }
+  .fila-titulo { flex-basis: 200px; }
+  .pie { margin: 0 var(--espacio-4); padding-bottom: var(--espacio-6); }
+}
